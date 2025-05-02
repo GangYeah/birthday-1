@@ -86,6 +86,25 @@
         margin-bottom: 0.5rem;
       }
 
+      .intro-text {
+        margin-bottom: 1.5rem;
+        font-size: .9rem;
+        line-height: 1.2;
+      }
+
+      .photo-placeholder {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 12px;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1rem;
+        font-style: italic;
+      }
+
       .personal-message {
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
@@ -132,6 +151,10 @@
           font-size: 1rem;
         }
       }
+
+      .photo-placeholder img {
+        width: 50%;
+      }
     </style>
   </head>
   <body>
@@ -145,6 +168,15 @@
 
     <div class="card">
       <h1>🎉 50 лет! Юбилей 🎉</h1>
+
+      <div class="intro-text">
+        Приглашаю своих самых близких и родных людей, что занимает большой кусочек в моем сердце, присоединиться к торжественному мероприятию. Мы соберемся дружной компанией в честь моего дня рождения. Жду с нетерпением!
+      </div>
+
+      <div class="photo-placeholder">
+        <img src="926681a5-cbd8-4f3a-a38d-185afd285508.JPG">
+      </div>
+
       <div class="personal-message" id="personal-message">
         Привет! Жду тебя на празднике!
       </div>
@@ -152,7 +184,7 @@
       <div class="details">
         <p><strong>Дата:</strong> 24 мая 2025</p>
         <p><strong>Время:</strong> 18:00</p>
-        <p><strong>Место:</strong> г. Верхотурье, Гостевой дом "Бабинов"</p>
+        <p><strong>Место:</strong> г. Верхотурье, гостиница «Клуб-шале Верхотурье»</p>
         <p><strong>Дресс-код:</strong> Яркий стиль 🎨</p>
       </div>
       <div class="countdown" id="countdown"></div>
@@ -191,7 +223,6 @@
               (Math.random() - 0.5) * 200 + "px"
             );
             document.body.appendChild(firework);
-            // setInterval(() => firework.remove(), 1000);
           }
         }, 500);
       }
